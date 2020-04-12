@@ -5,15 +5,14 @@ with open('C:\\Users\\slugg\\Documents\\GitHub\\Hash-Join\\Hash-Join\\data1.json
 with open('C:\\Users\\slugg\\Documents\\GitHub\\Hash-Join\\Hash-Join\\data2.json') as b: 
     data2 = json.load(b)
 
-totalBuckets = 9
+totalBuckets = 10
 
-hashTable = [[] for _ in range(totalBuckets)]
+hashTable1 = [[] for _ in range(totalBuckets)]
+hashTable2 = [[] for _ in range(totalBuckets)]
+FinalTable = [[] for _ in range(totalBuckets)]
 
 def hashVal(key):
-    return key % len(hashTable)
-
-print(hashVal(5))
-print(hashVal(9))
+    return key % totalBuckets
 
 def insert(hashTable, key, value):
     intKey = int(key)
@@ -21,9 +20,19 @@ def insert(hashTable, key, value):
     hashTable[hashKey].append(value)
 
 for key, value in data1.items():
-    insert(hashTable, key, value)
+    insert(hashTable1, key, value)
 
 for key, value in data2.items():
-    insert(hashTable, key, value)
+    insert(hashTable2, key, value)
 
-print(hashTable)
+print("This is the result of Hashing Table 1")
+print(hashTable1)
+print("\nThis is the result of Hashing Table 2")
+print(hashTable2)
+
+def merge(lst1, lst2):
+    return [a + b for a, b in zip(lst1, lst2)] 
+
+FinalTable = merge(hashTable1, hashTable2)
+print("\nThis is the result of merging table 1 and 2")
+print(FinalTable)
