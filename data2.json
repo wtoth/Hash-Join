@@ -1,54 +1,54 @@
 [
   {
     "ID": "0", 
-    "Grade":"AChuck"
+    "Grade":"A"
   }, 	
   {
     "ID": "10", 
-    "GPA":"Frank 3.5"
+    "GPA":"3.5"
   }, 
   {
     "ID": "1", 
-    "Grade":"BCharlie"
+    "Grade":"B"
   },
   {
     "ID": "2", 
-    "Grade":"ABilly"
+    "Grade":"A"
   },
   {
     "ID": "3", 
-    "Grade":"ACharlie"
+    "Grade":"A"
   },
   {
     "ID": "4", 
-    "Grade":"CAlonso"
+    "Grade":"C"
   },
   {
     "ID": "5", 
-    "Grade":"ABryce"
+    "Grade":"A"
   },
   {
     "ID": "6", 
-    "Grade":"BCharlotte"
+    "Grade":"B"
   },
   {
     "ID": "7", 
-    "Grade":"ADevin"
+    "Grade":"A"
   },
   {
     "ID": "8", 
-    "Grade":"CDanielle"
+    "Grade":"C"
   },
   {
     "ID": "9", 
-    "Grade":"CEvan"
+    "Grade":"C"
   },
   {
     "ID": "10", 
-    "Grade":"CFrank"
+    "Grade":"C"
   },
   {
     "ID": "20", 
-    "Grade":"FNoOne"
+    "Grade":"F"
   }
 ]
